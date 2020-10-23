@@ -16,10 +16,10 @@ class App extends Component {
 
   render() {
     return (
-			<div className="container">
-			<textarea className={this.state.count > 79 ? "textarea-error" : ""} rows="3" onChange={this.contar.bind(this)}></textarea>
-			<div className={this.state.count > 79 ? "counter-error" : "counter"}>{this.state.count}</div>
-			</div>
+			        <div className="container">
+       			 	<textarea rows="3" onChange={this.count}></textarea>
+        			<div className="counter">{this.state.count}</div>
+      </div>
     ); 
   }
 }
